@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.contextualactionbar.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+    
+     <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="false" 
+        android:focusable="false"
+        android:visibility="gone"/>"
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/checkBox"
+        android:src="@drawable/ic_launcher" />
+    
+     <TextView
+         android:id="@+id/textView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_toRightOf="@+id/imageView"
+         android:ellipsize="end"
+         android:maxLines="1"
+         android:text="Medium Text"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textStyle="bold"
+         android:typeface="serif" />
+
+</com.example.contextualactionbar.CheckableRelativeLayout>
