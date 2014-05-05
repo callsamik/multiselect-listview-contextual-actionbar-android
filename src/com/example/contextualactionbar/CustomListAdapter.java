@@ -66,7 +66,7 @@ public class CustomListAdapter extends ArrayAdapter<Model> {
 			holder.checkBox.setVisibility(View.GONE);
 		}
 		//Changes the background of the list items depending on the ListView Choice Mode
-		if (((ListView) parent).isItemChecked(position)) {
+		if (lv.isItemChecked(position)) {
 			rowView.setBackgroundColor(0xff33b5e5);
 		} else {
 			rowView.setBackgroundColor(0xfff9f9);
