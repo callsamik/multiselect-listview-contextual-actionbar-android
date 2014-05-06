@@ -66,10 +66,9 @@ public class PlaceholderFragment extends SherlockListFragment implements
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 		super.onCreateOptionsMenu(menu, inflater);
-		inflater.inflate(R.menu.main, menu);
 		//We don't need this menu item for post Honeycomb devices
-		if (POST_HONEYCOMB) {
-			menu.removeItem(R.id.action_delete);
+		if(!POST_HONEYCOMB){
+			inflater.inflate(R.menu.main, menu);
 		}
 	}
 
